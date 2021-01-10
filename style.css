@@ -1,9 +1,11 @@
-p {
-    margin: 0;
-}
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+p, h2, h4 {
+    margin: 0;
+}
+
 .grey-border{
     border: 1px solid #b4b4b4;
 }
@@ -26,9 +28,23 @@ body {
     margin-top: 7px;
 }
 
-#form:focus {
-    box-shadow: 0 0 8px rgba(13, 126, 219, 0.6);
+#email{
+    margin-top: 19px;
+    font-size: 14px;
+}
+
+.success:focus{
     border-color: rgb(74, 114, 148);
+    box-shadow: 0 0 8px rgba(13, 126, 219, 0.6);
+    outline:0
+}
+
+.error{
+    border-color: red;
+}
+
+.error:focus {
+    box-shadow: 0 0 8px rgba(219, 13, 65, 0.6);
     outline:0
 }
 
@@ -45,5 +61,18 @@ body {
     background-color: rgb(4, 163, 4);
     border: 1px solid;
     border-radius: 7px;
+    cursor: pointer;
+}
+
+#submit:disabled{
+    cursor: auto;
+}
+
+.display-success{
+    background-color: #D4EDDA;
+    border: 1px solid #C3E6CB;
+    border-radius: 3px;
+    padding: 20px;
+    color: #487E53;
 }
 
